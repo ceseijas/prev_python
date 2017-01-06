@@ -7,7 +7,7 @@ def main():
 	#agrega una nueva hoja
 	worksheet = workbook.add_worksheet()
 	#lee y asigna a una variable el contenido del archivo xml, depende de la libreria lxml
-	doc = etree.parse('../l10n_pe_chart_fmr2.xml')
+	doc = etree.parse('l10n_pe_chart_fmr2.xml')
 	#obtiene la estructura del archivo, se tuvo que eliminar el campo DATA del archivo xml original
 	raiz=doc.getroot()
 	#asigna la cantidad de "registros" a leer que tiene el archivo xml	
